@@ -1,31 +1,34 @@
-﻿module OfficeInterop
+﻿namespace OfficeJS.Fable
 
 open Fable.Core
 open Fable.Core.JsInterop
 
-open OfficeJS
-open Excel
-open Word
+module GlobalBindings =
 
-[<Global>]
-let Office : Office.IExports = jsNative
+    open OfficeJS.Fable
 
-[<Global>]
-//[<CompiledName("Office.Excel")>]
-let Excel : Excel.IExports = jsNative
+    [<Global>]
+    let Office : Office.IExports = jsNative
 
-[<Global>]
-let Word : Word.IExports = jsNative
+    [<Global>]
+    //[<CompiledName("Office.Excel")>]
+    let Excel : Excel.IExports = jsNative
 
-[<Global>]
-let OneNote : OneNote.IExports = jsNative
+    [<Global>]
+    let Word : Word.IExports = jsNative
 
-[<Global>]
-let PowerPoint : PowerPoint.IExports = jsNative
+    [<Global>]
+    let OneNote : OneNote.IExports = jsNative
 
-[<Global>]
-let Visio : Visio.IExports = jsNative
+    [<Global>]
+    let PowerPoint : PowerPoint.IExports = jsNative
 
-[<Global>]
-let RangeLoadOptions : Interfaces.RangeLoadOptions = jsNative
+    [<Global>]
+    let Visio : Visio.IExports = jsNative
+
+    [<Global>]
+    let WordRangeLoadOptions : Word.Interfaces.RangeLoadOptions = jsNative
+
+    [<Global>]
+    let ExcelRangeLoadOptions : Excel.Interfaces.RangeLoadOptions = jsNative
 

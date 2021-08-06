@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <Compile Include="OfficeJS.fs" />
+    <Compile Include="Excel.fs" />
+    <Compile Include="Word.fs" />
     <Compile Include="GlobalBindings.fs" />
   </ItemGroup>
 
@@ -31,7 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
     <!--<Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />-->
   </ItemGroup>
   
