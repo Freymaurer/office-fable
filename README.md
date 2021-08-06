@@ -8,6 +8,7 @@ Fable bindings for Office-js
 - Get office.js typescript file
   - `npm install @types/office-js`
   - node_modules\@types\office-js\index.d.ts
+- ts2fable will not work without `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - Create Fable bindings with 
 `ts2fable "node_modules\@types\office-js\index.d.ts" src\office-fable\OfficeJS.fs`
 - Add Fable.Core to .fsproj `<PackageReference Include="Fable.Core" Version="3.2.8" />`
