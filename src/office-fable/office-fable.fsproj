@@ -8,20 +8,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    <Compile Include="OfficeJS.fs" />
+    <Compile Include="GlobalBindings.fs" />
   </ItemGroup>
 
   <PropertyGroup>
-    <Authors>Kevin Frey, CSB</Authors>
-    <Description>fslab documentation theme for FSharp.Formatting</Description>
-    <Summary>fslab documentation theme for FSharp.Formatting</Summary>
+    <Authors>Kevin Frey, CSBiology</Authors>
+    <Description>Fable bindings for Office-js</Description>
+    <Summary>Fable bindings for Office-js</Summary>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://fslab.org/docs-template/</PackageProjectUrl>
-    <PackageIconUrl>https://fslab.org/docs-template/img/logo.png</PackageIconUrl>
-    <PackageTags>documentation fsharp csharp dotnet</PackageTags>
-    <RepositoryUrl>https://github.com/fslaborg/docs-template</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Freymaurer/office-fable/</PackageProjectUrl>
+    <PackageTags>fable fsharp safe-stack office-js </PackageTags>
+    <RepositoryUrl>https://github.com/Freymaurer/office-fable</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <FsDocsLicenseLink>https://github.com/fslaborg/docs-template/blob/master/LICENSE</FsDocsLicenseLink>
-    <FsDocsReleaseNotesLink>https://github.com/fslaborg/docs-template/blob/master/RELEASE_NOTES.md</FsDocsReleaseNotesLink>
+    <FsDocsLicenseLink>https://github.com/Freymaurer/office-fable/blob/main/LICENSE</FsDocsLicenseLink>
+    <FsDocsReleaseNotesLink>https://github.com/Freymaurer/office-fable/blob/main/RELEASE_NOTES.md</FsDocsReleaseNotesLink>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="3.2.8" />
+    <PackageReference Include="Fable.React" Version="7.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="*.fsproj; **\*.fs; **\*.fsi" PackagePath="fable\" />
+    <!--<Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />-->
+  </ItemGroup>
+  
 </Project>
