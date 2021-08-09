@@ -31,6 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="../OfficeJS.Fable/Excel.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
+    <Content Include="../OfficeJS.Fable/OfficeJS.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
     <Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
   </ItemGroup>
   
