@@ -1,3 +1,11 @@
+### 0.2.0+d15cc10 (Released 2021-8-9)
+* Additions:
+    * latest commit #d15cc10
+    * [[#5bfabf2](https://github.com/Freymaurer/office-fable/commit/5bfabf2722c06b1a865bce7f9d51e02c0206d312)] Update fsproj to include shared officejs files.
+    * [[#d15cc10](https://github.com/Freymaurer/office-fable/commit/d15cc10e072b9fd8c2e824eea7877f3bdea3e9d4)] Update packaging to use fsproj name.
+* Bugfixes:
+    * [[#74735bb](https://github.com/Freymaurer/office-fable/commit/74735bbf32969121699c8aeb0f1293a507ebb10a)] Fix duplicate module name error
+
 ### 0.1.0+d2cb294 (Released 2021-8-9)
 * Additions:
     * latest commit #d2cb294
