@@ -133,6 +133,11 @@ module PackageTasks =
     open ProjectInfo
 
     open BasicTasks
+    open System.Text.RegularExpressions
+
+    let commitLinkPattern = @"\[\[#[a-z0-9]*\]\(.*\)\] "
+    
+    let replaceCommitLink input= Regex.Replace(input,commitLinkPattern,"")
 
     let pack = BuildTask.create "Pack" [clean; build; copyBinaries] {
         if promptYesNo (sprintf "creating stable package with version %s OK?" stableVersionTag ) 
@@ -142,8 +147,9 @@ module PackageTasks =
                     let msBuildParams =
                         {p.MSBuildParams with 
                             Properties = ([
+                                "PackageID", "OfficeJS.Fable"
                                 "Version",stableVersionTag
-                                "PackageReleaseNotes",  (release.Notes |> String.concat "\r\n")
+                                "PackageReleaseNotes",  (release.Notes |> String.concat "\r\n" |> replaceCommitLink)
                             ] @ p.MSBuildParams.Properties)
                         }
                     {

@@ -11,6 +11,8 @@
     <Compile Include="OfficeJS.fs" />
     <Compile Include="Excel.fs" />
     <Compile Include="Word.fs" />
+    <Compile Include="OneNote.fs" />
+    <Compile Include="PowerPoint.fs" />
     <Compile Include="GlobalBindings.fs" />
   </ItemGroup>
 
@@ -20,7 +22,7 @@
     <Summary>Fable bindings for Office-js</Summary>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Freymaurer/office-fable/</PackageProjectUrl>
-    <PackageTags>fable fsharp safe-stack office-js </PackageTags>
+    <PackageTags>fable;fsharp;safe-stack;office-js</PackageTags>
     <RepositoryUrl>https://github.com/Freymaurer/office-fable</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <FsDocsLicenseLink>https://github.com/Freymaurer/office-fable/blob/main/LICENSE</FsDocsLicenseLink>
@@ -33,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!--<Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />-->
+    <Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
   </ItemGroup>
   
 </Project>
