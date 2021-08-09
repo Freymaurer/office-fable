@@ -147,7 +147,7 @@ module PackageTasks =
                     let msBuildParams =
                         {p.MSBuildParams with 
                             Properties = ([
-                                "PackageID", "OfficeJS.Fable"
+                                //"PackageID", "OfficeJS.Fable"
                                 "Version",stableVersionTag
                                 "PackageReleaseNotes",  (release.Notes |> String.concat "\r\n" |> replaceCommitLink)
                             ] @ p.MSBuildParams.Properties)
