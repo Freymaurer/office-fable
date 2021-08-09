@@ -15,6 +15,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "OfficeJS.Fable", "src\Offic
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ExcelJS.Fable", "src\ExcelJS.Fable\ExcelJS.Fable.fsproj", "{E6DE2521-FEF2-4864-9740-B7E7A961BB32}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "WordJS.Fable", "src\WordJS.Fable\WordJS.Fable.fsproj", "{A73578BC-997D-4DB4-9675-1129DA9D4974}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{E6DE2521-FEF2-4864-9740-B7E7A961BB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6DE2521-FEF2-4864-9740-B7E7A961BB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6DE2521-FEF2-4864-9740-B7E7A961BB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73578BC-997D-4DB4-9675-1129DA9D4974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73578BC-997D-4DB4-9675-1129DA9D4974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73578BC-997D-4DB4-9675-1129DA9D4974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73578BC-997D-4DB4-9675-1129DA9D4974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
