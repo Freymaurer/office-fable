@@ -13,7 +13,7 @@ This repository is split into three submodules available on nuget:
 
 In a SAFE-stack add these packages to the Client and open them like such:
 ```fsharp
-open ExcelJS.Fable
+open ExcelJS.Fable //WordJS.Fable, OfficeJS.Fable 
 open ExcelJS.Fable.Excel
 open ExcelJS.Fable.GlobalBindings
 ```
