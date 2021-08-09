@@ -4,14 +4,13 @@ open Fable.Core
 open Fable.Core.JsInterop
 
 
-module Office =
+module GlobalBindings =
 
     open OfficeJS.Fable
 
     [<Global>]
     let Office : Office.IExports = jsNative
 
-module Word =
 
     [<Global>]
     let Word : Word.IExports = jsNative

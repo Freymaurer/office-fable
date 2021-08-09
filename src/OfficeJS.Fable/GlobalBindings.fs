@@ -4,15 +4,13 @@ open Fable.Core
 open Fable.Core.JsInterop
 
 
-module Office =
+module GlobalBindings =
 
     open OfficeJS.Fable
 
     [<Global>]
     let Office : Office.IExports = jsNative
 
-
-module Excel =
 
     [<Global>]
     //[<CompiledName("Office.Excel")>]
@@ -22,28 +20,20 @@ module Excel =
     let ExcelRangeLoadOptions : Excel.Interfaces.RangeLoadOptions = jsNative
     
 
-module Word =
-
     [<Global>]
     let Word : Word.IExports = jsNative
 
     [<Global>]
     let WordRangeLoadOptions : Word.Interfaces.RangeLoadOptions = jsNative
 
-
-module OneNote =
     
     [<Global>]
     let OneNote : OneNote.IExports = jsNative
 
 
-module PowerPoint =
-
     [<Global>]
     let PowerPoint : PowerPoint.IExports = jsNative
     
-
-module Visio =
     
     [<Global>]
     let Visio : Visio.IExports = jsNative

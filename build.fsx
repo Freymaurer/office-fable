@@ -280,7 +280,4 @@ let _preRelease =
         [setPrereleaseTag; clean; build; copyBinaries; packPrerelease; createPrereleaseTag; publishNugetPrerelease]
 
 // run copyBinaries by default
-BuildTask.runOrDefault copyBinaries
-
-open BasicTasks
-BuildTask.runOrDefault copyBinaries
+BuildTask.runOrDefaultWithArguments copyBinaries
