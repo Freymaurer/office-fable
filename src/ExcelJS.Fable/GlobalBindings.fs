@@ -1,11 +1,11 @@
-﻿namespace OfficeJS.Fable
+﻿namespace ExcelJS.Fable
 
 open Fable.Core
 open Fable.Core.JsInterop
 
 module GlobalBindings =
 
-    open OfficeJS.Fable
+    open ExcelJS.Fable
 
     [<Global>]
     let Office : Office.IExports = jsNative

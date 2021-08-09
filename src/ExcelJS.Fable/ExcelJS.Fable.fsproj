@@ -2,14 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>office_fable</RootNamespace>
+    <RootNamespace>excel_fable</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <WarnOn>3390;$(WarnOn)</WarnOn>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="../OfficeJS.Fable/OfficeJS.fs" />
-    <Compile Include="../OfficeJS.Fable/Excel.fs" />
+    <Compile Include="OfficeJS.fs" />
+    <Compile Include="Excel.fs" />
     <Compile Include="GlobalBindings.fs" />
   </ItemGroup>
 
@@ -32,9 +32,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="../OfficeJS.Fable/Excel.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
-    <Content Include="../OfficeJS.Fable/OfficeJS.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
     <Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Excel.fs" />
+    <Content Remove="OfficeJS.fs" />
   </ItemGroup>
   
 </Project>
