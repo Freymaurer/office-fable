@@ -35,10 +35,4 @@
     <Content Include="*.fsproj; *.fs" Exclude="**\*.fs.js" PackagePath="fable\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Remove="OfficeJS.fs" />
-    <Content Remove="Word.fs" />
-  </ItemGroup>
-
-
 </Project>

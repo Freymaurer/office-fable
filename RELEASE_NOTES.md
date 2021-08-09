@@ -1,3 +1,9 @@
+### 0.2.2+ff60e9b (Released 2021-8-9)
+* Additions:
+    * latest commit #ff60e9b
+* Bugfixes:
+    * [[#ff60e9b](https://github.com/Freymaurer/office-fable/commit/ff60e9bd10259964e9c8b6a85d7cb777872f4ea6)] Try fix referencing issues
+
 ### 0.2.1+730148a (Released 2021-8-9)
 * Additions:
     * latest commit #730148a
