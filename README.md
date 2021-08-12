@@ -13,12 +13,12 @@ This repository is split into three submodules available on nuget:
 
 In a SAFE-stack add these packages to the Client and open them like such:
 ```fsharp
-open ExcelJS.Fable //WordJS.Fable, OfficeJS.Fable 
+open ExcelJS.Fable //WordJS.Fable, OfficeJS.Fable
 open ExcelJS.Fable.Excel
 open ExcelJS.Fable.GlobalBindings
 ```
 
-You need to load the website into your Excel application (desctop app or browser) with a `manifest.xml`. An example for one of those can be seen in the [Swate](https://github.com/nfdi4plants/Swate) repository, in which ExcelJS.Fable is used.
+You need to load the website into your Excel application (desktop app or browser) with a `manifest.xml`. An example for one of those can be seen in the [Swate](https://github.com/nfdi4plants/Swate) repository, in which ExcelJS.Fable is used.
 
 To initialize the client-excel connection you need to call:
 
