@@ -1,6 +1,10 @@
 # office-fable
 Fable bindings for Office-js.
 
+# Example
+
+I created a minimal SAFE stack example for a office excel add-in: Check it out [here](https://github.com/Freymaurer/SAFE-MinExcel).
+
 # Installation
 
 This repository is split into three submodules available on nuget:
